@@ -27,6 +27,8 @@ dotenv.config()
 
     MongooseModule.forRoot(process.env.MONGODB,{
       family: 4, 
+     
+      
     }), // conexion a la base de datos
     
 
