@@ -25,7 +25,9 @@ dotenv.config()
       rootPath: join(__dirname,'..','public'),
     }),
 
-    MongooseModule.forRoot(process.env.MONGODB), // conexion a la base de datos
+    MongooseModule.forRoot(process.env.MONGODB,{
+      family: 4, 
+    }), // conexion a la base de datos
     
 
 
